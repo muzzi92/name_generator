@@ -1,0 +1,8 @@
+<form action="name-picker/select/" method="post">
+    {% csrf_token %}
+    <label>First Name: </label>
+    <input name="first_name" type="text">
+    <label>Second Name: </label>
+    <input name="second_name" type="text">
+    <input type="submit" value="Submit">
+</form>

@@ -1,6 +1,8 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+# from google.appengine.ext import ndb
 
-from django.db import models
-
-# Create your models here.
+# class User(ndb.Model):
+#     google_id = nbd.IntegerProperty()
+#     email = nbd.StringProperty()
+#     first_name = ndb.StringProperty()
+#     last_name = ndb.StringProperty()
+#     ghost_name = ndb.StringProperty()
