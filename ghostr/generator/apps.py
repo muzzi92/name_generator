@@ -4,5 +4,5 @@ from __future__ import unicode_literals
 from django.apps import AppConfig
 
 
-class NamePickerConfig(AppConfig):
-    name = 'name_picker'
+class Generator(AppConfig):
+    name = 'generator'

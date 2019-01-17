@@ -2,10 +2,10 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def index(request):
-    return render(request, "name_picker/index.html")
+    return render(request, "generator/index.html")
 
 def entry(request):
-    return render(request, "name_picker/entry.html")
+    return render(request, "generator/entry.html")
 
 def select(request):
     first_name = request.POST["first_name"]
@@ -14,4 +14,4 @@ def select(request):
         "first_name": first_name,
         "second_name": second_name
     }
-    return render(request, "name_picker/select.html", context)
+    return render(request, "generator/select.html", context)
