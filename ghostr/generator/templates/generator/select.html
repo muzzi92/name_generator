@@ -1,2 +1,8 @@
-{{first_name}}
-{{second_name}}
+<form action="create/" method="post">
+{% for name in ghost_names %}
+    {% csrf_token %}
+    <input type="checkbox" name="ghost_name" id="choice{{forloop.counter}}" value="{{name}}">
+    <label for="choice{{ forloop.counter }}">{{first_name}} "{{name}}" {{second_name}}</label><br>
+{% endfor %}
+    <input type="submit" value="Select">
+</form>
