@@ -6,3 +6,7 @@
 #     first_name = ndb.StringProperty()
 #     last_name = ndb.StringProperty()
 #     ghost_name = ndb.StringProperty()
+
+class Ghosts:
+
+    names = ["Jimmy", "Paul", "Bret"]

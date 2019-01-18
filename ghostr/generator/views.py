@@ -1,8 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from generator.models import Ghosts
 
 def index(request):
-    return render(request, "generator/index.html")
+    names = Ghosts().names
+    context = { "names": names }
+    return render(request, "generator/index.html", context)
 
 def entry(request):
     return render(request, "generator/entry.html")

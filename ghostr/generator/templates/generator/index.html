@@ -1,8 +1,11 @@
+<h1> Ghostr - The Ghost Name Generator </h1>
+
 <ul>
+{% for name in names %}
     <li>
-        Casper
+        {{ name }}
     </li>
-    <li>
-        Beatle Juice
-    </li>
+{% endfor %}
 </ul>
+
+<a href="entry/">Create Your Ghost Name</a>
